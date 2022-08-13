@@ -107,6 +107,8 @@
             var human = L.icon({
                 iconUrl: '<?= base_url('asset/marker/human.svg') ?>',
                 iconSize: [50, 95], // size of the icon
+                popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+
             });
 
 
