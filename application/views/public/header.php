@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map Beebenet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" href="<?= base_url('asset/public/img/map-search.png') ?>">
     <link rel="stylesheet" href="<?= base_url('leftjs/') ?>leaflet.css">
     <script src="<?= base_url('leftjs/') ?>leaflet.js"></script>
