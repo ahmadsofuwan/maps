@@ -116,10 +116,10 @@
 
 
             map = L.map('map').setView([lat, long], 13);
-            map.locate({
-                setView: true,
-                maxZoom: 16
-            });
+            // map.locate({
+            //     setView: true,
+            //     maxZoom: 16
+            // });
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '© OpenStreetMap'
