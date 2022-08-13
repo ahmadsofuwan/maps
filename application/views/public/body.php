@@ -10,13 +10,12 @@
                 </span>
             </div>
         </div>
-        <div class="col-sm-12 h-screen overflow-y-auto" id="restSearch">
+        <div class="col-sm-12 overflow-y-auto" id="restSearch">
         </div>
     </div>
 </span>
 <div id="map" class="h-screen w-screen">
 </div>
-<a href="https://www.google.com/maps/place" target="_blank"></a>
 
 <script>
     $(document).ready(function() {
@@ -36,6 +35,7 @@
 
         function search() {
             $('#restSearch').html('');
+            $('#restSearch').addClass('h-screen');
             $.ajax({
                     url: '<?= base_url('Maps/ajax/search') ?>',
                     type: 'POST',
@@ -70,6 +70,7 @@
 
         function resVal() {
             $('.resVal').click(function() {
+                $('#restSearch').removeClass('h-screen');
                 var koodinat = $(this).attr('koordinat').split(',');
                 if (tempMarker != null)
                     map.removeLayer(tempMarker);
